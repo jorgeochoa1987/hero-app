@@ -1,0 +1,97 @@
+$primary-color: #007bff;
+$orange: #EB6E1C;
+$darkOrgange : #7f3504;
+$white: #fff;
+
+body {
+   
+    margin: 0;
+    overflow-x: hidden; 
+
+    .home-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007bff;
+        background-image: url(/src/assets/img/Rectangle.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        top: 0%;
+        position: absolute;
+        height: 100%;
+    
+
+        @media (max-width: 768px) {
+            flex-direction: column; 
+        }
+    }
+
+    .half {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .half:first-child  > img{
+    width: 50%;
+    }
+
+    .half:last-child >img {
+        @media (max-width: 768px) {
+           display: none;
+        }
+        width: 20%;
+        animation: fadeIn 1s forwards;
+        position: absolute;
+        top: 0%;
+        animation: fadeIn 1s forwards, bounce 0.5s 0.5s forwards; 
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px); 
+            }
+        }
+    }
+    .content {
+        text-align-last: center;
+    }
+
+    h1 {
+        font-size: 2rem; 
+        margin-bottom: 1rem; 
+        color: $white;
+        text-align: center;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        background-color: $orange;
+        color: $white;
+        border-radius: 0%;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        z-index: 3;
+
+        &:hover {
+            background-color: lighten($darkOrgange, 10%);
+
+        }
+    }
+}

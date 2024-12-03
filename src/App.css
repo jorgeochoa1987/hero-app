@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Obelix Pro';
+  src: url('./fonts/ObelixPro-cyr.ttf') format('truetype'),
+       url('./fonts/ObelixPro-cyr.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+ 
+body {
+  font-family: 'Obelix Pro', sans-serif; 
+  background-color: white; 
+  background-image: url(/src/assets/img/dots.png);
+  background-size: cover;
+
+}
+#root {
+ width: 100%;
+}
+
+.main-header {
+  background-color: #ffffff; 
+  padding: 47px 36px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 98%; 
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.white-icon-button {
+  color: white;
+}
+
+.icon-rotate {
+  transition: transform 0.3s;
+}
+
+.icon-rotate.open {
+  transform: rotate(180deg);
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem; 
+  font-family: 'Obelix Pro';
+  font-weight: bold; 
+  margin-right: 20px; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin: 0 10px;
+  color :black;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #0084FF;
+  padding: 10px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #007bff; 
+  }
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.filter-icon {
+  margin-right: 10px; 
+}
+
+.filter-text {
+  font-size: 1rem; 
+  font-weight: bold; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+
+
+
+button:focus, button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  padding: 3px 8px;
+}
+.modal-content{
+  .close-button{
+    padding: 3px 8px;
+
+    color: #000;
+}
+}
+body button:hover {
+
+    padding: 3px 8px;
+  background-color: #b04a0600;
+}
